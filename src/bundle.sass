@@ -1,0 +1,26 @@
+@import './Static/styles-lib'
+
+@import './Static/colors'
+@import './Static/fonts'
+@import './Static/decore'
+
+
+*
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+body
+  margin: 0
+  color: $-c6
+  font-size: 14px
+  line-height: 16px
+  font-family: var(--f-rlw)
+  background-color: $-c1
+
+::selection
+  background: $-c2
+  
+$-stop-pc-max: 1140px
+$-stop-tablet-min: 900px
+$-stop-phone-max: $-stop-tablet-min

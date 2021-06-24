@@ -1,0 +1,23 @@
+include ../../bundle.pug
+
+include ../../Blocks/cylinder/cylinder.pug
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Cylinder by frity
+  body
+    center
+      h1 Just spinning CSS3 cylinder $)
+    +cylinder()
+      +side(1)
+        h1(style="color: yellow") Hello World
+      +side(2)
+        h2.row.jcc.aic.h100(style="font-style: italic; color: white")
+          span Cylinder by <code>frity corp.</code>
+      +side(5)
+        div.w100.row.aic.jcc(style='padding: 1em; transform: translateZ(30px) scale(0.8); border-radius: 5px; border: 3px solid black; background: white; color: red; font-size: 3em; writing-mode: vertical-lr; opacity: 0.6')
+          | Looks Good
